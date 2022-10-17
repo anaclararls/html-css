@@ -1,0 +1,28 @@
+@charset "UTF-8"
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+/* 
+    Para que possamos prosseguir!
+*/
+
+
+
+body {
+    background-image: linear-gradient(to right, rgb(212, 118, 118),  #de9595, #f4dcdc);
+}
+
+h1 {
+    color: rgb(77, 28, 28);
+}
+
+h1#principal {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(128, 56, 56);
+    
+}

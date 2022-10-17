@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. de Hover</title>
+    <style>
+
+        @font-face {
+            font-family: 'Gothic War';
+            src: url(fonts/Gothic War.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        . {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1 {
+            font-family: 'Gothic War', fantasy;
+            font-size: 2em;
+        }
+
+        div > p {
+            display: none;
+            margin: auto; 
+        }
+        /* Aqui eu utilizo div > p que significa que minha div tem um paragrafo filho e o display com a propriedade none significa que eu desejo esconder essa div de modo padrao */
+
+        div > img {
+            display: none;
+            margin: auto;
+            border-radius: 50%;
+            border: 3px solid lightcoral;
+            width: 10%;
+            height: 10%;
+            /*Aqui estou fazendo uma alteracao propria para fim de testes
+            border-radius deixa a imagem em formato de circulo e usando a shorthand <border: largura tipo cor>*/
+        }
+
+        div:hover > p {
+            display: inline-block;
+        }
+
+        /* Aqui eu estou colocando a div em :hover para que o elemento ao ser focado mude seu estilo, porem estou estilizando apenas o paragrafo filho da minha div, e a propriedade display: block; significa que eu desejo que meu paragrafo apareca apenas quando passar o mouse sobre a div. */
+        
+        div:hover {
+            color: red;
+        }
+
+        div:hover > img {
+            display: inline-block;
+            /*Aqui estou realizando um teste proprio com imagens*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto Escondido...</p>
+        <img src="image/aninha.png" alt="Aninha">
+
+    </div>
+
+    
+</body>
+</html>

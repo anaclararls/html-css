@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Estilos externos */
+
+body {
+    background-color: rgb(238, 224, 98);
+    color: black;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    background-color: chocolate;
+    color:brown;
+    text-align:justify;
+}
+
+h2 {
+    color: brown;
+    text-align:justify;
+}
+
